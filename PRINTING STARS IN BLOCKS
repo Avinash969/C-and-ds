@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main()
+{
+   int blocks,stars;
+   printf("enter the no.of blocks:\n");
+   scanf("%d",&blocks);
+    printf("enter the no.of stars:\n");
+    scanf("%d",&stars);
+    int c=0;
+    for(int i=0;i<blocks;i++)
+    {
+        c=0;
+        printf("\n");
+        for(int j=0;j<blocks-i;j++)
+        {
+            for(int k=0;k<stars;k++)
+            {
+            printf(" * ");
+            c=c+1;
+        }
+        printf("\n");
+        
+    }printf("%d\n",c);
+    printf("----------------------");
+    }
+}
