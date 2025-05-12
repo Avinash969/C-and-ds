@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+void main()
+
+{
+int a,b,c,d;
+printf("Enter four numbers: ");
+scanf("%d %d %d %d",&a,&b,&c,&d);
+int big= a>b && b>c && c>d ? a: b>c && c>d ? b: c>d ?c:d ;
+int small= a<b && b<c && c<d ? a: b<c && c<d ? b: c<d ?c:d ;
+ int sum =small+big;
+ printf("%d",sum);
+}
